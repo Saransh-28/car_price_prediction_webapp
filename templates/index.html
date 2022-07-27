@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="color:blue">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Predictive analysis</h2>
+            <h3>Year of purchase</h3><input id="first" name="Year" type="required">
+            <h3>What is the fuel type('Diesel':4, 'Petrol':3, 'LPG':2, 'CNG':1)</h3><br><input id="second" name="fuel_type" required="required">
+            <h3>How Many Kilometers Drived?</h3><input id="third" name="Kms_Driven" required="required">
+            <h3>Transmission type ('Manual':1, 'Automatic':2) ?</h3><br><input id="fourth" name="transmission" required="required">
+            <h3>Owner ('First Owner':1, 'Second Owner':2, 'Third Owner':3,'Fourth & Above Owner':4, 'Test Drive Car':0) ?</h3><br><input id="fourth" name="owner" required="required">
+            <h3>seller type ('Individual':1, 'Dealer':2, 'Trustmark Dealer':3) ?</h3><br><input id="first" name="seller_type" required="required">
+            <h3>mileage ?</h3><br><input id="first" name="mileage" required="required">
+            <h3>engine(in CC) ?</h3><br><input id="first" name="engine" required="required">
+            <h3>power ?</h3><br><input id="first" name="max power" required="required">
+            <h3>number of seats ?</h3><br><input id="first" name="seats" required="required">
+            <br><br><button id="sub" type="submit ">Calculate</button>
+            <br>
+        </form>
+    </div>
+
+
+
+
+    <style>
+        body {
+            background-color: lightslategray;
+            text-align: center;
+            padding: 0px;
+        }
+        
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+        
+        #box {
+            border-radius: 60px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+        
+        #fuel {
+            width: 83px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 20px;
+        }
+        
+        #fuel:hover {
+            background-color: coral;
+        }
+        
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #research:hover {
+            background-color: coral;
+        }
+        
+        #resea {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #resea:hover {
+            background-color: coral;
+        }
+        
+        #sub {
+            width: 120px;
+            height: 43px;
+            text-align: center;
+            border-radius: 14px;
+            font-size: 18px;
+        }
+        
+        #sub:hover {
+            background-color: darkcyan;
+        }
+        
+        #first {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #second {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #third {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #fourth {
+            border-radius: 14px;
+            height: 25px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
